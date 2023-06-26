@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="KEVINWIN11.DWConvencionesNexus.sa"
+  DTS:DTSID="{ED0B7EA7-6312-41F7-9F6B-7F2BF071AECC}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=KEVINWIN11;User ID=sa;Initial Catalog=DWConvencionesNexus;Provider=SQLNCLI11.1;Application Name=SSIS-ETLCentroConvenciones-{ED0B7EA7-6312-41F7-9F6B-7F2BF071AECC}KEVINWIN11.DWConvencionesNexus.sa;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA4dQPOzF9+0WXMt8n+z3djQAAAAACAAAAAAAQZgAAAAEAACAAAAB2fNfViKnSooOcEnQP2m/gw5pf2oHH/E6SFrVGmkhKOQAAAAAOgAAAAAIAACAAAABBLuLhI9GOKA7AsRF8LwRx89F2h+eVCiqzOkvw/HKb4YAAAACoEK1sSqFUy5Aj2oVaKG47PygBVPQS1oBAzW0sT7b4F/tqN0HWM0bN6rEdc7bBfPMY0ZFWVfCe9NF5bRi8uPR6vN+0awkPKwk6ainvjTPs6ZgGsliIwXvh6KNUWuk5hF1FJMVgFpV1a94KVQBasnn64VjD8S+IxuVGewGV/fzxnEAAAACy7TJA/Bqgsx56rKGGm/FMrOjoDYwdJ0JxlaMxJWSCgjHLeD2mYdtbDkdQ2/JkatnvoJkD7IcKC5CBJhJKlDz0</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
