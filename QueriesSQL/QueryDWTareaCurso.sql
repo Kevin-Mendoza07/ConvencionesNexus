@@ -27,10 +27,10 @@ FechaFinal date
 create table DimEmpleado(
 DimEmpleadoID int primary key identity(1,1),
 IdEmpleado int,
-[Nombre] [varchar](50) NULL,
-[Apellido] [varchar](50) NULL,
-[Telefono] [varchar](50) NULL,
-[Direccion] [varchar](50) NULL,
+[Nombre] varchar(50) NULL,
+[Apellido] varchar(50) NULL,
+[Telefono] varchar(50) NULL,
+[Direccion] varchar(50) NULL,
 FechaInicial date,
 FechaFinal date
 )
@@ -41,7 +41,7 @@ DimFechaID int primary key identity(1,1),
 [Año] int NULL,
 [NoMes] int NULL,
 [NombreMes] nvarchar(50) NULL,
-[Dia] [int] NULL,
+[Dia] int NULL,
 [NombreDia] nvarchar(50) NULL,
 [Trimestre] int NULL
 )
@@ -105,9 +105,9 @@ from ConvencionesNexus.dbo.Pago p
 inner join ConvencionesNexus.dbo.Evento e
 on e.IdEvento=p.IdEvento
 inner join DimFecha df on df.FechaID=e.FechaEvento
-inner join DimCliente dc on dc.DimClienteID=e.IdCliente
-inner join DimEvento de on de.DimEventoID= p.IdEvento
-inner join DimEmpleado dem on dem.DimEmpleadoID=e.IdEmpleado
+inner join DimCliente dc on dc.IdCliente=e.IdCliente
+inner join DimEvento de on de.IdEvento= p.IdEvento
+inner join DimEmpleado dem on dem.IdEmpleado=e.IdEmpleado
 WHERE dc.FechaFinal='9999/12/31' AND 
 	  de.FechaFinal='9999/12/31' AND
 	  dem.FechaFinal='9999/12/31'
