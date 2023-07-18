@@ -6,7 +6,6 @@ go
 create table DimEvento(
 DimEventoID int primary key identity(1,1),
 IdEvento int,
-NombreCliente varchar(200) null,
 Descripcion varchar(50) null,
 Estado varchar(50) null,
 FechaInicial date,

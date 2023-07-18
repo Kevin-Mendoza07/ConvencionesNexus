@@ -20,11 +20,9 @@ Create view DimEvento
 as
 Select 
 e.IdEvento,
-c.Nombre+' '+c.Apellido as [Nombre Cliente],
 e.Descripcion,
 e.Estado
-from Evento e inner join Cliente c
-on e.IdCliente=c.IdCliente
+from Evento
 ------------------------------------------------------------
 Create view DimCliente 
 as
